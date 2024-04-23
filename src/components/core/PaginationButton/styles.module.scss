@@ -1,0 +1,66 @@
+.paginationButtonWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+
+  height: 35px;
+  width: 100%;
+
+  margin-top: 60px;
+
+  .naviLBtnWrap,
+  .naviRBtnWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .naviLBtn, .naviRBtn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      width: 35px;
+      height: 100%;
+      color: $gray-D2D2;
+
+      &[data-active='true'] {
+        cursor: pointer;
+        color: $black-222;
+      }
+    }
+  }
+
+  .naviPageBtnWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    .naviPageBtn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      width: 35px;
+      height: 35px;
+      border-radius: 4px;
+
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 500;
+      color: $gray-AAA;
+      cursor: pointer;
+      &[data-selected='true'] {
+        background: $black-222;
+        font-weight: 700;
+        color: $white-FFF;
+        cursor: default;
+      }
+    }
+  }
+}

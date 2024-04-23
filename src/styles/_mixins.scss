@@ -1,0 +1,79 @@
+@use 'var';
+
+@mixin header48() {
+  font-size: var.$h1_size;
+  font-weight: var.$bold;
+  line-height: var.$height_1;
+}
+
+@mixin header34() {
+  font-size: var.$h2_size;
+  font-weight: var.$bold;
+  line-height: var.$height_1;
+}
+
+@mixin header28() {
+  font-size: var.$h3_size;
+  font-weight: var.$bold;
+  line-height: var.$height_1;
+}
+
+@mixin header24() {
+  font-size: var.$h4_size;
+  font-weight: var.$bold;
+  line-height: var.$height_1;
+}
+
+@mixin header20() {
+  font-size: var.$h5_size;
+  font-weight: var.$medium;
+  line-height: var.$height_1;
+}
+
+@mixin header18() {
+  font-size: var.$h6_size;
+  font-weight: var.$medium;
+  line-height: var.$height_1;
+}
+
+@mixin text18() {
+  font-size: var.$text1_size;
+  font-weight: var.$medium;
+  line-height: var.$height_1;
+}
+
+@mixin text16() {
+  font-size: var.$text2_size;
+  font-weight: var.$medium;
+  line-height: var.$height_1;
+}
+
+@mixin text14() {
+  font-size: var.$text3_size;
+  font-weight: var.$medium;
+  line-height: var.$height_1;
+}
+
+@mixin text12() {
+  font-size: var.$text4_size;
+  font-weight: var.$medium;
+  line-height: var.$height_2;
+}
+
+@mixin flex(
+  $justifyContent: space-between,
+  $alignItems: center,
+  $flexDirection: row
+) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}
+
+@mixin flexCol($justifyContent: space-between, $alignItems: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
